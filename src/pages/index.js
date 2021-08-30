@@ -22,7 +22,6 @@ const Home = () => {
               height={85}
             />
           </a>
-          ergerggerer
           <div className="flex justify-center">
             <div className="w-2/3 py-1">
               <p className="text-left">
