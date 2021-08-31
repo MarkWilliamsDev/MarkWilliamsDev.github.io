@@ -22,6 +22,7 @@ const Home = () => {
                 alt="Logo for GigCreate.com"
                 width={85}
                 height={85}
+                quality={100}
               />
             </a>
           }
