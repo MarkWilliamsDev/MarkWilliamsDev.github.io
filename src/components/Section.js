@@ -2,7 +2,7 @@ import React from 'react'
 
 function Section({ title, body, image }) {
   return (
-    <div className="bg-secondary bg-opacity-50 my-32 backdrop-filter backdrop-blur-sm filer drop-shadow">
+    <div className="bg-secondary bg-opacity-70 my-32 backdrop-filter backdrop-blur-sm">
       <div className="container py-6 text-light flex flex-col justify-center items-center">
         <div className="py-2">
           <h2 className="text-2xl">{title}</h2>

@@ -17,7 +17,7 @@ const Home = () => {
           image={
             <a href="https://gigcreate.com" target="_blank" rel="noreferrer">
               <StaticImage
-                className="max-w-xs"
+                className="w-12 sm:w-16"
                 src="../images/gigCreateLogo.png"
                 alt="Logo for GigCreate.com"
                 width={85}
@@ -32,6 +32,15 @@ const Home = () => {
           title={'About Me'}
           body={
             'ergrg  reg aea regregreag ergrereea ere  re rgergaegraerg re er eragraereg ar erarea a re reare reare re r re eragreare are re err r aera rear '
+          }
+          image={
+            <StaticImage
+              className="w-24 sm:w-32"
+              src="../images/me.jpg"
+              alt="Portrait picture of Mark Williams"
+              width={318}
+              height={477}
+            />
           }
         />
       </Layout>
