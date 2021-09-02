@@ -3,8 +3,16 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import Section from '../components/Section'
+import List from '../components/List'
+import Toggle from '../components/Toggle'
+import { useState } from 'react'
+
+const gigCreateTechnologies = ['React', 'Next.js', 'MongoDB/Mongoose']
+const gigCreateApiIntegrations = ['Stripe', 'Auth0', 'Eventbrite']
 
 const Home = () => {
+  const [showGigCreateTechnologies, setShowGigCreateTechnologies] = useState(false)
+
   return (
     <>
       <title>Mark Williams Web Development</title>
@@ -12,7 +20,20 @@ const Home = () => {
         <Section
           title={'GigCreate'}
           body={
-            'ewefwefeew ew w we aewefwea a eaw  eaeffaewf  we fawef a e awefaeffawe  we awef ase ew ewfewaaefawef awe faewfawefawef awef aew ewa ffwef ewew  ew awe weawe aew ae wwe ewa '
+            <>
+              <p>ewefwefeew ew w we a aew ewa ffwef ewew ew awe weawe aew ae wwe ewa ewf we</p>
+              <div>
+                <Toggle onClickCallback={setShowGigCreateTechnologies} />
+                {showGigCreateTechnologies ? (
+                  <>
+                    <List listTitle={'Technologies Used'} list={gigCreateTechnologies} />
+                    <List listTitle={'Major API Integrations'} list={gigCreateApiIntegrations} />
+                  </>
+                ) : (
+                  ''
+                )}
+              </div>
+            </>
           }
           image={
             <a href="https://gigcreate.com" target="_blank" rel="noreferrer">
@@ -31,7 +52,10 @@ const Home = () => {
         <Section
           title={'About Me'}
           body={
-            'ergrg  reg aea regregreag ergrereea ere  re rgergaegraerg re er eragraereg ar erarea a re reare reare re r re eragreare are re err r aera rear '
+            <p>
+              ergrg reg aea regregreag ergrereea ere re rgergaegraerg re er eragraereg ar erarea a
+              re reare reare re r re eragreare are re err r aera rear
+            </p>
           }
           image={
             <StaticImage

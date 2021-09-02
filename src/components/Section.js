@@ -9,9 +9,7 @@ function Section({ title, body, image }) {
         </div>
         {image}
         <div className="flex justify-center">
-          <div className="w-2/3 py-1">
-            <p className="text-left">{body}</p>
-          </div>
+          <div className="w-2/3 py-1">{body}</div>
         </div>
       </div>
     </div>
