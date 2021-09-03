@@ -8,10 +8,10 @@ function List({ list, listTitle }) {
   }
 
   return (
-    <div className="flex pt-3 flex-col items-center">
+    <>
       <h3 className="text-xl">{listTitle}</h3>
       <ul>{renderItems()}</ul>
-    </div>
+    </>
   )
 }
 

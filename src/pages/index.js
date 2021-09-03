@@ -7,28 +7,40 @@ import List from '../components/List'
 import Toggle from '../components/Toggle'
 import { useState } from 'react'
 
-const gigCreateTechnologies = ['React', 'Next.js', 'MongoDB/Mongoose']
+const gigCreateTechnologies = ['React', 'Redux', 'Next.js', 'MongoDB/Mongoose']
 const gigCreateApiIntegrations = ['Stripe', 'Auth0', 'Eventbrite']
 
 const Home = () => {
   const [showGigCreateTechnologies, setShowGigCreateTechnologies] = useState(false)
 
   return (
-    <>
+    <div className="mainBackgroundImage ">
       <title>Mark Williams Web Development</title>
       <Layout>
         <Section
           title={'GigCreate'}
           body={
             <>
-              <p>ewefwefeew ew w we a aew ewa ffwef ewew ew awe weawe aew ae wwe ewa ewf we</p>
-              <div>
-                <Toggle onClickCallback={setShowGigCreateTechnologies} />
+              <div className="flex justify-center px-2">
+                <p>ewefwefeew ew w we a aew ewa ffwef ewew ew awe weawe aew ae wwe ewa ewf we</p>
+              </div>
+
+              <div className="flex flex-col">
+                <div className="flex justify-center pt-2 transform hover:scale-105">
+                  <Toggle
+                    setIsToggled={setShowGigCreateTechnologies}
+                    isToggled={showGigCreateTechnologies}
+                    toggleText={'Technologies and APIs Used'}
+                  />
+                </div>
+
                 {showGigCreateTechnologies ? (
-                  <>
-                    <List listTitle={'Technologies Used'} list={gigCreateTechnologies} />
-                    <List listTitle={'Major API Integrations'} list={gigCreateApiIntegrations} />
-                  </>
+                  <div className="flex flex-col items-center">
+                    <div>
+                      <List list={gigCreateTechnologies} />
+                      <List list={gigCreateApiIntegrations} />
+                    </div>
+                  </div>
                 ) : (
                   ''
                 )}
@@ -36,9 +48,14 @@ const Home = () => {
             </>
           }
           image={
-            <a href="https://gigcreate.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://gigcreate.com"
+              target="_blank"
+              rel="noreferrer"
+              className="transform hover:scale-110"
+            >
               <StaticImage
-                className="w-12 sm:w-16"
+                className="w-12 sm:w-16 "
                 src="../images/gigCreateLogo.png"
                 alt="Logo for GigCreate.com"
                 width={85}
@@ -52,10 +69,12 @@ const Home = () => {
         <Section
           title={'About Me'}
           body={
-            <p>
-              ergrg reg aea regregreag ergrereea ere re rgergaegraerg re er eragraereg ar erarea a
-              re reare reare re r re eragreare are re err r aera rear
-            </p>
+            <div className="flex justify-center px-2">
+              <p>
+                ergrg reg aea regregreag ergrereea ere re rgergaegraerg re er eragraereg ar erarea a
+                re reare reare re r re eragreare are re err r aera rear
+              </p>
+            </div>
           }
           image={
             <StaticImage
@@ -68,7 +87,7 @@ const Home = () => {
           }
         />
       </Layout>
-    </>
+    </div>
   )
 }
 

@@ -2,4 +2,4 @@
   My Portfolio Site
 </h1>
 
-Using [Gatsby](https://www.gatsbyjs.com/):
+Using [Gatsby](https://www.gatsbyjs.com/)

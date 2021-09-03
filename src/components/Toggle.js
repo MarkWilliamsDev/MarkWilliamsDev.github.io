@@ -1,33 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded'
 import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded'
 
-function Toggle({ onClickCallback }) {
-  const [toggleState, setToggleState] = useState(false)
+function Toggle({ setIsToggled, isToggled, toggleText }) {
+  const handleOnClick = () => {
+    setIsToggled(!isToggled)
+  }
 
   const renderToggleArrow = () => {
-    return !toggleState ? (
+    return !isToggled ? (
       <ArrowRightRoundedIcon fontSize={'large'} />
     ) : (
       <ArrowDropDownRoundedIcon fontSize={'large'} />
     )
   }
 
-  const handleOnClick = () => {
-    onClickCallback(!toggleState)
-    setToggleState(!toggleState)
-  }
-
   return (
     <div
-      className="inline-block"
       onClick={handleOnClick}
       onKeyDown={handleOnClick}
-      aria-expanded={toggleState}
+      aria-expanded={isToggled}
       role="button"
       tabIndex={0}
     >
       {renderToggleArrow()}
+      <div className="text-xl float-right">{toggleText}</div>
     </div>
   )
 }
