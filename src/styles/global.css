@@ -10,3 +10,13 @@ body {
   background-size: cover;
   width: 100%;
 }
+
+h1,
+h2 {
+  font-family: montserrat;
+}
+
+ul,
+li {
+  font-family: arvo;
+}

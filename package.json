@@ -13,17 +13,22 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b main"
+    "deploy": "gatsby build && gh-pages -d public -b main",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
+    "@fontsource/arvo": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.1",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "autoprefixer": "^10.3.3",
     "gatsby": "^3.13.0",
     "gatsby-plugin-image": "^1.12.0",
+    "gatsby-plugin-layout": "^2.13.0",
     "gatsby-plugin-manifest": "^3.12.0",
     "gatsby-plugin-material-ui": "^3.0.1",
     "gatsby-plugin-postcss": "^4.12.0",
+    "gatsby-plugin-preload-fonts": "^2.13.0",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-source-filesystem": "^3.12.0",
     "gatsby-transformer-sharp": "^3.12.0",
