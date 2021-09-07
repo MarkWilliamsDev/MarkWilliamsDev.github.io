@@ -2,8 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import List from '../components/List'
-import Toggle from '../components/Toggle'
+import Toggle from '../components/ToggleList'
 import Section from '../components/Section'
 import Layout from '../layouts'
 
@@ -28,41 +27,30 @@ function Projects() {
         }
         body={
           <>
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
               <p>A live music event planning web app using React with Next.js</p>
+              <div className="m-3">
+                <div className="transform hover:scale-110">
+                  <a href="https://gigcreate.com" target="_blank" rel="noreferrer">
+                    <StaticImage
+                      className="w-12 sm:w-16 "
+                      src="../images/gigCreateLogo.png"
+                      alt="Logo for GigCreate.com"
+                      width={85}
+                      height={85}
+                      quality={100}
+                    />
+                  </a>
+                </div>
+              </div>
               <div className="flex justify-center pt-2 transform hover:scale-105">
                 <Toggle
-                  setIsToggled={setShowGigCreateTechnologies}
-                  isToggled={showGigCreateTechnologies}
                   toggleText={'Technologies and APIs Used'}
+                  list={[gigCreateTechnologies, gigCreateApiIntegrations]}
                 />
               </div>
-              {showGigCreateTechnologies ? (
-                <div className="flex flex-col items-center">
-                  <div>
-                    <List list={gigCreateTechnologies} />
-                    <List list={gigCreateApiIntegrations} />
-                  </div>
-                </div>
-              ) : (
-                ''
-              )}
             </div>
           </>
-        }
-        image={
-          <div className="transform hover:scale-110">
-            <a href="https://gigcreate.com" target="_blank" rel="noreferrer">
-              <StaticImage
-                className="w-12 sm:w-16 "
-                src="../images/gigCreateLogo.png"
-                alt="Logo for GigCreate.com"
-                width={85}
-                height={85}
-                quality={100}
-              />
-            </a>
-          </div>
         }
       />
       <Section
