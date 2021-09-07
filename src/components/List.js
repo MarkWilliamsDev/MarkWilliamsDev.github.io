@@ -1,18 +1,13 @@
 import React from 'react'
 
-function List({ list, listTitle }) {
+function List({ list }) {
   const renderItems = () => {
     return list.map((item) => {
-      return <li key={item}>{item}</li>
+      return <div key={item} className="custom-list-item">{`${item} `}</div>
     })
   }
 
-  return (
-    <>
-      <h3 className="text-xl">{listTitle}</h3>
-      <ul>{renderItems()}</ul>
-    </>
-  )
+  return <div className="flex flex-col items-left">{renderItems()}</div>
 }
 
 export default List

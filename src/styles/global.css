@@ -16,7 +16,6 @@ h2 {
   font-family: montserrat;
 }
 
-ul,
-li {
+.custom-list-item {
   font-family: arvo;
 }

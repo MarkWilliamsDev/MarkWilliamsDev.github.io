@@ -4,7 +4,7 @@ import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded'
 
 import List from './List'
 
-function ToggleList({ setIsToggled, isToggled, toggleText, list }) {
+function ToggleList({ toggleText, list }) {
   const [showList, setShowList] = useState(false)
 
   const handleOnClick = () => {
@@ -22,24 +22,17 @@ function ToggleList({ setIsToggled, isToggled, toggleText, list }) {
   return (
     <>
       <div
+        className="flex"
         onClick={handleOnClick}
         onKeyDown={handleOnClick}
         aria-expanded={showList}
         role="button"
         tabIndex={0}
       >
-        {renderToggleArrow()}
+        <div className="transform hover:scale-110">{renderToggleArrow()}</div>
         <div className="text-xl float-right">{toggleText}</div>
       </div>
-      {showList ? (
-        <div className="flex flex-col items-center">
-          <div>
-            <List list={list} />
-          </div>
-        </div>
-      ) : (
-        ''
-      )}
+      {showList ? <List list={list} /> : ''}
     </>
   )
 }

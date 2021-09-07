@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import Toggle from '../components/ToggleList'
@@ -10,8 +9,6 @@ const gigCreateTechnologies = ['React', 'Redux', 'Next.js', 'MongoDB/Mongoose']
 const gigCreateApiIntegrations = ['Stripe', 'Auth0', 'Eventbrite']
 
 function Projects() {
-  const [showGigCreateTechnologies, setShowGigCreateTechnologies] = useState(false)
-
   return (
     <Layout>
       <Section
@@ -43,10 +40,10 @@ function Projects() {
                   </a>
                 </div>
               </div>
-              <div className="flex justify-center pt-2 transform hover:scale-105">
+              <div className="flex flex-col items-center pt-2">
                 <Toggle
                   toggleText={'Technologies and APIs Used'}
-                  list={[gigCreateTechnologies, gigCreateApiIntegrations]}
+                  list={[...gigCreateTechnologies, ...gigCreateApiIntegrations]}
                 />
               </div>
             </div>
