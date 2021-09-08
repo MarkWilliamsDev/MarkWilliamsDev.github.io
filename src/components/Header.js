@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Nav from './Nav/Nav'
+
 function Header() {
   return (
     <div className="bg-primary bg-opacity-90 backdrop-filter backdrop-blur-lg">
@@ -9,6 +11,9 @@ function Header() {
             <h1>Mark Williams Web Development</h1>
           </div>
         </div>
+      </div>
+      <div className="mb-2 absolute inset-x-0 bottom-0 sm:left-1/3">
+        <Nav />
       </div>
     </div>
   )
