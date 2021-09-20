@@ -21,6 +21,11 @@ body {
   font-family: 'arvo';
 }
 
+.font-noto-serif {
+  font-family: 'noto-serif';
+  letter-spacing: 0.3rem;
+}
+
 .toggle-arrow {
   transition-duration: 100ms;
 }

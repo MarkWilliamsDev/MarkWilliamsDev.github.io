@@ -1,11 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded'
 
 import List from './List'
 
 const ToggleList = ({ ListTitle, list }) => {
   const [showList, setShowList] = useState(false)
-  const [extraBottomPadding, setExtraBottomPadding] = useState(0)
 
   const handleOnClick = () => {
     setShowList(!showList)
@@ -18,8 +17,7 @@ const ToggleList = ({ ListTitle, list }) => {
   return (
     <>
       <div
-        className="flex"
-        style={showList ? { paddingBottom: `${extraBottomPadding}px` } : {}}
+        className="flex pt-2"
         onClick={handleOnClick}
         onKeyDown={handleOnClick}
         aria-expanded={showList}
@@ -27,8 +25,8 @@ const ToggleList = ({ ListTitle, list }) => {
         tabIndex={0}
       >
         <div>
-          <div className="relative text-xl float-right font-sans">
-            <div className="absolute -inset-x-7 flex">
+          <div className="relative text-xl font-sans">
+            <div className="absolute -inset-x-8 -inset-y-1 flex">
               <div
                 className={`toggle-arrow ${
                   showList ? 'toggled-toggle-arrow' : ''
@@ -40,10 +38,8 @@ const ToggleList = ({ ListTitle, list }) => {
             {ListTitle}
           </div>
         </div>
-        <div className="absolute inset-y-52 flex flex-col items-left">
-          {showList ? <List list={list} setLayoutChange={setExtraBottomPadding} /> : ''}
-        </div>
       </div>
+      <div className="sm:pl-28">{showList ? <List list={list} /> : ''}</div>
     </>
   )
 }

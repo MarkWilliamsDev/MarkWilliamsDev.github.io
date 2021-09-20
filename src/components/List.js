@@ -1,21 +1,13 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 
-const List = ({ list, isHorizontal = false, setLayoutChange }) => {
-  const listRef = useRef()
-  const listHeight = (listRef?.current?.offsetHeight * 7).toString()
-
-  useEffect(() => {
-    setLayoutChange(listHeight)
-  }, [listHeight, setLayoutChange])
-
+const List = ({ list, isHorizontal = false }) => {
   const renderItems = () => {
     return list.map((item) => {
       return (
         <div
-          ref={listRef}
           id="list"
           key={item}
-          className={`font-arvo ${isHorizontal ? 'mx-1' : ''}`}
+          className={`font-noto-serif ${isHorizontal ? 'mx-1' : ''}`}
         >{`${item} `}</div>
       )
     })

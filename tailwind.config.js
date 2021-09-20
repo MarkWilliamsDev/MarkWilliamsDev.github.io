@@ -9,7 +9,7 @@ module.exports = {
       light: '#FFFFF0',
     },
     fontFamily: {
-      serif: ['noto-serif'],
+      serif: ['arvo'],
       sans: ['montserrat'],
     },
     extend: {},

@@ -3,7 +3,7 @@ import React from 'react'
 function Section({ title, body }) {
   return (
     <section
-      className={`bg-secondary pt-4 pb-5 bg-opacity-70 my-32 backdrop-filter backdrop-blur-sm text-light`}
+      className={`bg-secondary pt-4 pb-5 bg-opacity-70 backdrop-filter backdrop-blur-sm text-light`}
     >
       <div className="container flex flex-col justify-center items-center">
         <div className="px-2">
