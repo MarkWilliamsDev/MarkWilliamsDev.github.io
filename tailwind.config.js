@@ -8,6 +8,10 @@ module.exports = {
       secondary: '#606F8E',
       light: '#FFFFF0',
     },
+    fontFamily: {
+      serif: ['noto-serif'],
+      sans: ['montserrat'],
+    },
     extend: {},
   },
   variants: {

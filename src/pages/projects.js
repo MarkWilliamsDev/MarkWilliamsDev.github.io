@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import Toggle from '../components/ToggleList'
+import ToggleList from '../components/ToggleList'
 import Section from '../components/Section'
 import Layout from '../layouts'
 
@@ -25,8 +25,7 @@ function Projects() {
         body={
           <>
             <div className="flex flex-col items-center">
-              <p>A live music event planning web app using React with Next.js</p>
-              <div className="m-3">
+              <div className="my-2">
                 <div className="transform hover:scale-110">
                   <a href="https://gigcreate.com" target="_blank" rel="noreferrer">
                     <StaticImage
@@ -40,9 +39,13 @@ function Projects() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col items-center pt-2">
-                <Toggle
-                  toggleText={'Technologies and APIs Used'}
+
+              <p>A live music event planning web app using React with Next.js</p>
+            </div>
+            <div className="grid grid-cols-3 pt-2 place-items-center">
+              <div className="col-start-2">
+                <ToggleList
+                  ListTitle={'Technologies'}
                   list={[...gigCreateTechnologies, ...gigCreateApiIntegrations]}
                 />
               </div>
@@ -51,12 +54,14 @@ function Projects() {
         }
       />
       <Section
-        title={'GigCreate Support App'}
+        title={'GigCreate.com Support App'}
         body={
-          <p>
-            Support app for general and direct communication with users. Demo version not yet
-            available.
-          </p>
+          <div className="flex flex-col items-center mt-2">
+            <p>
+              Support app for general and direct communication with users. Demo version not yet
+              available.
+            </p>
+          </div>
         }
       />
     </Layout>

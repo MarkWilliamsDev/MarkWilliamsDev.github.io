@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   background-image: url('https://i.postimg.cc/tCs8gs3N/IMG-20190920-175636991-HDR.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-h1,
-h2 {
-  font-family: montserrat;
+.font-arvo {
+  font-family: 'arvo';
 }
 
-.custom-list-item {
-  font-family: arvo;
+.toggle-arrow {
+  transition-duration: 100ms;
+}
+
+.toggle-arrow:active {
+  transform: rotate(90deg);
+}
+
+.toggled-toggle-arrow {
+  transform: rotate(90deg);
 }
