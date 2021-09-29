@@ -17,7 +17,7 @@ const ToggleList = ({ ListTitle, list }) => {
   return (
     <>
       <div
-        className="flex pt-2"
+        className="flex justify-center pt-2"
         onClick={handleOnClick}
         onKeyDown={handleOnClick}
         aria-expanded={showList}
@@ -39,7 +39,7 @@ const ToggleList = ({ ListTitle, list }) => {
           </div>
         </div>
       </div>
-      <div className="sm:pl-28">{showList ? <List list={list} /> : ''}</div>
+      <div className="flex justify-center md:pl-20">{showList ? <List list={list} /> : ''}</div>
     </>
   )
 }

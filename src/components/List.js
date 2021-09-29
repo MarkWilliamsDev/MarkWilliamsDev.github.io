@@ -4,16 +4,12 @@ const List = ({ list, isHorizontal = false }) => {
   const renderItems = () => {
     return list.map((item) => {
       return (
-        <div
-          id="list"
-          key={item}
-          className={`font-noto-serif ${isHorizontal ? 'mx-1' : ''}`}
-        >{`${item} `}</div>
+        <li key={item} className={`font-noto-serif ${isHorizontal ? 'mx-1' : ''}`}>{`${item} `}</li>
       )
     })
   }
 
-  return <>{renderItems()}</>
+  return <ul>{renderItems()}</ul>
 }
 
 export default List

@@ -1,13 +1,7 @@
 import React from 'react'
-import NavItem from './NavItem'
 
-function Nav() {
-  return (
-    <div className="flex justify-center">
-      <NavItem href={'/'} text={'Home'} />
-      <NavItem href={'/projects'} text={'Projects'} />
-    </div>
-  )
+function Nav({ children }) {
+  return <div className="flex justify-center items-center">{children}</div>
 }
 
 export default Nav

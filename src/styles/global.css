@@ -10,11 +10,9 @@ html {
 body {
   background-image: url('https://i.postimg.cc/tCs8gs3N/IMG-20190920-175636991-HDR.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .font-arvo {
@@ -36,4 +34,24 @@ body {
 
 .toggled-toggle-arrow {
   transform: rotate(90deg);
+}
+
+a {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #414855;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #53786c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #608e7f;
 }

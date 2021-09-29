@@ -1,17 +1,18 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import NavItemContainer from './NavItemContainer'
 
-function NavItem({ text, href }) {
+function NavItem({ content, href }) {
   return (
-    <div className="mx-1">
+    <NavItemContainer>
       <Link
         className="hover:underline text-light"
         to={href}
         activeClassName={'underline font-bold'}
       >
-        {text}
+        {content}
       </Link>
-    </div>
+    </NavItemContainer>
   )
 }
 

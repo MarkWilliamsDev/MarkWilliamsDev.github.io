@@ -6,7 +6,8 @@ function Layout({ children }) {
   return (
     <>
       <Header />
-      <div className="mt-24">{children}</div>
+
+      <div className="mt-14">{children}</div>
     </>
   )
 }
