@@ -8,7 +8,7 @@ import NavItemExternal from './Nav/NavItemExternal'
 const GitHubLogo = memo(() => {
   return (
     <StaticImage
-      src="../../images/GitHub-Mark-Light-32px.png"
+      src="../images/GitHub-Mark-Light-32px.png"
       alt="GitHub Logo"
       width={32}
       height={32}
