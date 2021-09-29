@@ -1,9 +1,20 @@
 import { StaticImage } from 'gatsby-plugin-image'
-import React from 'react'
+import React, { memo } from 'react'
 
 import Nav from './Nav/Nav'
 import NavItem from './Nav/NavItem'
 import NavItemExternal from './Nav/NavItemExternal'
+
+const GitHubLogo = memo(() => {
+  return (
+    <StaticImage
+      src="../../images/GitHub-Mark-Light-32px.png"
+      alt="GitHub Logo"
+      width={32}
+      height={32}
+    />
+  )
+})
 
 function Header() {
   return (
@@ -19,17 +30,7 @@ function Header() {
         <Nav>
           <NavItem href={'/'} content={'Home'} />
           <NavItem href={'/projects'} content={'Projects'} />
-          <NavItemExternal
-            href={'https://github.com/MarkWilliamsDev'}
-            content={
-              <StaticImage
-                src="../../images/GitHub-Mark-Light-32px.png"
-                alt="GitHub Logo"
-                width={32}
-                height={32}
-              />
-            }
-          />
+          <NavItemExternal href={'https://github.com/MarkWilliamsDev'} content={<GitHubLogo />} />
         </Nav>
       </div>
     </div>
