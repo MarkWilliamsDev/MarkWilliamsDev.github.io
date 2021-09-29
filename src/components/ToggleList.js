@@ -35,7 +35,7 @@ const ToggleList = ({ ListTitle, list }) => {
                 {renderToggleArrow()}
               </div>
             </div>
-            {ListTitle}
+            <div className="select-none">{ListTitle}</div>
           </div>
         </div>
       </div>
