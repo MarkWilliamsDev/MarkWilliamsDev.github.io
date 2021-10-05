@@ -4,7 +4,10 @@ const List = ({ list, isHorizontal = false }) => {
   const renderItems = () => {
     return list.map((item) => {
       return (
-        <li key={item} className={`font-noto-serif ${isHorizontal ? 'mx-1' : ''}`}>{`${item} `}</li>
+        <li
+          key={item}
+          className={`font-arvo tracking-wider ${isHorizontal ? 'mx-1' : ''}`}
+        >{`${item} `}</li>
       )
     })
   }

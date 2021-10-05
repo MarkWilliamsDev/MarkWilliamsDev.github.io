@@ -21,16 +21,7 @@ function Projects() {
     <Layout>
       <div className="flex flex-col space-y-32">
         <Section
-          title={
-            <a
-              href="https://gigcreate.com/features-of-gig-create"
-              className="hover:underline"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GigCreate.com
-            </a>
-          }
+          title={'GigCreate'}
           body={
             <>
               <div className="flex justify-center">
@@ -56,8 +47,9 @@ function Projects() {
               <div className="md:mx-56 mt-2 space-y-3">
                 <p>A live music event planning web app using React with Next.js.</p>
                 <p>
-                  Originally created using the MERN stack, this app was migrated to Next.js a few
-                  months prior to going into production.
+                  Originally created using the MERN stack, this app was migrated to{' '}
+                  <a href="https://nextjs.org/">Next.js</a> a few months before to going into
+                  production.
                 </p>
               </div>
               <div className="flex flex-col pt-2">
@@ -70,7 +62,7 @@ function Projects() {
           }
         />
         <Section
-          title={'GigCreate.com Support App'}
+          title={'GigCreate Support App'}
           body={
             <>
               <div className="flex items-center mt-2">

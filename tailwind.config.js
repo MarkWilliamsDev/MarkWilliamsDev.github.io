@@ -9,8 +9,13 @@ module.exports = {
       light: '#FFFFF0',
     },
     fontFamily: {
-      serif: ['arvo'],
+      serif: ['noto-serif'],
       sans: ['montserrat'],
+    },
+    letterSpacing: {
+      wide: '.025em',
+      wider: '.15em',
+      widest: '.30em',
     },
     extend: {},
   },

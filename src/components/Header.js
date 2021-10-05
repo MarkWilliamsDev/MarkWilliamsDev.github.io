@@ -21,7 +21,7 @@ function Header() {
     <div className="bg-primary bg-opacity-90 backdrop-filter backdrop-blur-lg pt-6 pb-14">
       <div className="container">
         <div className="flex justify-center text-center px-3">
-          <div className="text-3xl md:text-4xl lg:text-5xl text-light">
+          <div className="text-3xl md:text-4xl lg:text-5xl text-light tracking-wide">
             <h1>Mark Williams Web Development</h1>
           </div>
         </div>

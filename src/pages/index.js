@@ -50,17 +50,17 @@ const Home = () => {
                   <a href="https://www.codecademy.com/">Codecademy</a>'s computer science course. I
                   then decided at my level, web development was the way to go and after spending
                   time on Codecademy learning a fair amount of Javascript, decided to focus on
-                  learning React, Stephen Grider's{' '}
+                  learning React. After completing Stephen Grider's{' '}
                   <a href="https://www.udemy.com/course/node-with-react-fullstack-web-development/">
                     Node with React: Fullstack Web Development
                   </a>{' '}
-                  on <a href="https://www.udemy.com/">Udemy</a> being particularly helpful in laying
-                  the foundation for my recently launched web app.
+                  on <a href="https://www.udemy.com/">Udemy</a>, I began working on my first web app
+                  which has been recently launched.
                 </p>
                 <p>
-                  In my spare time I enjoy listening to music and playing bass, and have recently
-                  started to learn the trumpet. I enjoy gaming on PC and get pretty nerdy about PC
-                  gaming hardware.
+                  In my spare time I enjoy listening to music and playing bass. I've also started to
+                  learn the trumpet. I enjoy gaming on PC and get pretty nerdy about PC gaming
+                  hardware.
                 </p>
               </div>
             </>
