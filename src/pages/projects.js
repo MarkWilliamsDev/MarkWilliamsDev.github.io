@@ -36,7 +36,11 @@ function Projects() {
               <div className="flex justify-center">
                 <div className="mt-3 mb-2">
                   <div className="transform hover:scale-110">
-                    <a href="https://gigcreate.com" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://gigcreate.com/features-of-gig-create"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <StaticImage
                         className="w-12 sm:w-16 "
                         src="../images/gigCreateLogo.png"
@@ -52,8 +56,8 @@ function Projects() {
               <div className="md:mx-56 mt-2 space-y-3">
                 <p>A live music event planning web app using React with Next.js.</p>
                 <p>
-                  The foundation of this app came from a tutorial project for the MERN stack but was
-                  migrated to a Next.js project a few months prior to going into production.
+                  Originally created using the MERN stack, this app was migrated to Next.js a few
+                  months prior to going into production.
                 </p>
               </div>
               <div className="flex flex-col pt-2">
