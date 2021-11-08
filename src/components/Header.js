@@ -48,7 +48,6 @@ function Header() {
           <div className="pl-1">
             <NavItemExternal href={'https://github.com/MarkWilliamsDev'} content={<GitHubLogo />} />
           </div>
-
           <NavItemExternal
             href={'https://stackoverflow.com/users/13570122/mark-williams'}
             content={<StackOverflowLogo />}
