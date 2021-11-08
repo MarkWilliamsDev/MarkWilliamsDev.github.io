@@ -45,8 +45,10 @@ function Header() {
         <Nav>
           <NavItem href={'/'} content={'Home'} />
           <NavItem href={'/projects'} content={'Projects'} />
+          <div className="pl-1">
+            <NavItemExternal href={'https://github.com/MarkWilliamsDev'} content={<GitHubLogo />} />
+          </div>
 
-          <NavItemExternal href={'https://github.com/MarkWilliamsDev'} content={<GitHubLogo />} />
           <NavItemExternal
             href={'https://stackoverflow.com/users/13570122/mark-williams'}
             content={<StackOverflowLogo />}
