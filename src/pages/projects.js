@@ -47,9 +47,8 @@ function Projects() {
               <div className="md:mx-56 mt-2 space-y-3">
                 <p>A live music event planning web app using React with Next.js.</p>
                 <p>
-                  Originally created using the MERN stack, this app was migrated to{' '}
-                  <a href="https://nextjs.org/">Next.js</a> a few months before to going into
-                  production.
+                  Originally created using the MERN stack, this app was migrated to Next.js a few
+                  months before to going into production.
                 </p>
               </div>
               <div className="flex flex-col pt-2">
@@ -69,7 +68,15 @@ function Projects() {
                 <div className="md:mx-56">
                   <p>
                     Support app for general and direct communication with users. Demo version not
-                    yet available.
+                    yet available.{' '}
+                    <a
+                      href="https://github.com/MarkWilliamsDev/support-client"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Repository on GitHub
+                    </a>
+                    .
                   </p>
                 </div>
               </div>
