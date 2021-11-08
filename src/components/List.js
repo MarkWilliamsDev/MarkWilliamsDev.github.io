@@ -6,7 +6,7 @@ const List = ({ list, isHorizontal = false }) => {
       return (
         <li
           key={item}
-          className={`font-arvo tracking-wider ${isHorizontal ? 'mx-1' : ''}`}
+          className={`font-arvo text-base tracking-wider ${isHorizontal ? 'mx-1' : ''}`}
         >{`${item} `}</li>
       )
     })
