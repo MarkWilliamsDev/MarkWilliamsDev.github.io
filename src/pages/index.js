@@ -10,12 +10,12 @@ const technologicalExprience = [
   'Gatsby',
   'MongoDB',
   'Express',
-  'MobX',
   'Redux',
-  'Stripe',
-  'Auth0',
+  'MobX',
   'Tailwind',
   'Bootstrap',
+  'Stripe',
+  'Auth0',
 ]
 
 const Home = () => {
@@ -36,6 +36,7 @@ const Home = () => {
                     height={477}
                   />
                 </div>
+
                 <div>
                   <List list={technologicalExprience} isHorizontal={true} />
                 </div>

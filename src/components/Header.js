@@ -7,12 +7,27 @@ import NavItemExternal from './Nav/NavItemExternal'
 
 const GitHubLogo = memo(() => {
   return (
-    <StaticImage
-      src="../images/GitHub-Mark-Light-32px.png"
-      alt="GitHub Logo"
-      width={32}
-      height={32}
-    />
+    <div style={{ width: '26px' }}>
+      <StaticImage
+        src="../images/GitHub-Mark-Light-32px.png"
+        alt="GitHub Logo"
+        width={32}
+        height={32}
+      />
+    </div>
+  )
+})
+
+const StackOverflowLogo = memo(() => {
+  return (
+    <div style={{ width: '26px' }}>
+      <StaticImage
+        src="../images/logo-stackoverflow.png"
+        alt="Stack Overflow Logo"
+        width={240}
+        height={240}
+      />
+    </div>
   )
 })
 
@@ -30,7 +45,12 @@ function Header() {
         <Nav>
           <NavItem href={'/'} content={'Home'} />
           <NavItem href={'/projects'} content={'Projects'} />
+
           <NavItemExternal href={'https://github.com/MarkWilliamsDev'} content={<GitHubLogo />} />
+          <NavItemExternal
+            href={'https://stackoverflow.com/users/13570122/mark-williams'}
+            content={<StackOverflowLogo />}
+          />
         </Nav>
       </div>
     </div>
