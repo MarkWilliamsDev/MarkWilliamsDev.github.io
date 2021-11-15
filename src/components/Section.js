@@ -12,7 +12,7 @@ function Section({ title, body }) {
           </div>
         </div>
       )}
-      <div className="px-3 text-xl tracking-wide font-serif">{body}</div>
+      <div className="container px-3 text-xl tracking-wide font-serif">{body}</div>
     </section>
   )
 }
