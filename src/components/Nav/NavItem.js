@@ -6,7 +6,7 @@ function NavItem({ content, href }) {
   return (
     <NavItemContainer>
       <Link
-        className="font-serif text-2xl hover:underline text-light text-lg tracking-wide"
+        className="font-sans text-2xl hover:underline text-light text-lg tracking-wide"
         to={href}
         activeClassName={'underline font-bold'}
       >
