@@ -44,13 +44,14 @@ const Home = () => {
                   <List list={technologicalExprience} isHorizontal={true} />
                 </div>
               </div>
-              <div className="md:mx-40 mt-4 mb-3 space-y-4">
+              <div className="md:mx-56 mt-4 mb-3 space-y-4 text-left">
                 <p>
-                  Hi, I'm Mark. A web developer based in Malvern, UK. I love to code and think I'm
-                  pretty good at it too. It's extremely satisfying to get an app to work.
+                  A "self taught" web developer based in Malvern, UK, I enjoy learning and using new
+                  technologies. I'm currently looking for my first professional opportunity to put
+                  my knowledge and skills to use
                 </p>
                 <p>
-                  I started coding at the beginning of the pandemic, learning Python on{' '}
+                  Starting at the beginning of the pandemic, I learnt Python from{' '}
                   <a href="https://www.codecademy.com/">Codecademy</a>'s computer science course. I
                   then decided to get into web development and after spending time on Codecademy
                   learning Javascript, I focused on learning React.
@@ -63,9 +64,16 @@ const Home = () => {
                   , I began working on my first personal project which has been recently launched.
                 </p>
                 <p>
-                  In my spare time I enjoy listening to music and playing bass. I've also started to
-                  learn the trumpet. I enjoy gaming on PC and get pretty nerdy about PC gaming
-                  hardware.
+                  I recently completed{' '}
+                  <a href="https://www.udemy.com/course/understanding-typescript/">
+                    Understanding TypeScript - 2022 Edition
+                  </a>{' '}
+                  by Maximilian Schwarzmüller
+                </p>
+                <p>
+                  In my spare time I enjoy listening to music and playing bass, which I play in a
+                  band for a traditional folk dance group. I've also recently started to learn the
+                  trumpet.
                 </p>
               </div>
             </>
