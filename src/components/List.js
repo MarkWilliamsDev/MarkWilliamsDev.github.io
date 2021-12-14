@@ -2,11 +2,11 @@ import React from 'react'
 
 const List = ({ list, isHorizontal = false }) => {
   const renderItems = () => {
-    return list.map((item) => {
+    return list.map(item => {
       return (
         <li
           key={item}
-          className={`font-arvo text-base tracking-wider ${isHorizontal ? 'mx-1' : ''}`}
+          className={`font-arvo text-left text-base tracking-wider ${isHorizontal ? 'mx-1' : ''}`}
         >{`${item} `}</li>
       )
     })

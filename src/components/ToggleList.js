@@ -37,7 +37,7 @@ const ToggleList = ({ ListTitle, list }) => {
           <div className="select-none text-xl font-arvo">{ListTitle}</div>
         </div>
       </div>
-      <div className="flex justify-center md:pl-20">{showList ? <List list={list} /> : ''}</div>
+      <div className="flex justify-center pl-20">{showList ? <List list={list} /> : ''}</div>
     </>
   )
 }
