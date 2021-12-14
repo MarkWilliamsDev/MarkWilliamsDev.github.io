@@ -47,13 +47,11 @@ function Projects() {
           }
           body={
             <>
-              <div className="md:mx-56 mt-2 space-y-3">
-                <p>
-                  Originally created using the MERN stack, this app was migrated to Next.js a few
-                  months before to going into production.
-                </p>
-              </div>
-              <div className="flex flex-col pt-2">
+              <p>
+                Originally created using the MERN stack, this app was migrated to Next.js a few
+                months before to going into production.
+              </p>
+              <div className="flex flex-col pt-1">
                 <ToggleList
                   ListTitle={'Technologies'}
                   list={[...gigCreateTechnologies, ...gigCreateApiIntegrations]}
@@ -72,9 +70,25 @@ function Projects() {
             />
           }
           body={
-            <div className="flex flex-col pt-2">
+            <div className="flex flex-col pt-1">
               <ToggleList ListTitle={'Technologies'} list={gigCreateAdminAppTechnologies} />
             </div>
+          }
+        />
+        <Section
+          title={'Express with Typescript'}
+          subTitle={'A simple REST API server using Express and Typescript '}
+          body={
+            <p>
+              Based on an exercise in a Maximilian Schwarzmüller Typescript course with
+              independently added improvements
+            </p>
+          }
+          link={
+            <NavItemExternal
+              href={'https://github.com/MarkWilliamsDev/Express-with-Typescript-Example'}
+              content={'Github Repository'}
+            />
           }
         />
         <Section

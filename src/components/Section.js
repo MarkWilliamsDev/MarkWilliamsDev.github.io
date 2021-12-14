@@ -14,12 +14,13 @@ function Section({ title, subTitle, body, link }) {
           </div>
         )}
         {subTitle && <h3 className="text-center pt-2">{subTitle}</h3>}
-        {link && <div className="text-center pt-2">{link}</div>}
+
         {body && (
-          <div className="px-3 text-xl tracking-wide font-serif">
-            <div className="flex flex-col">{body}</div>
+          <div className="px-3 py-1 text-xl tracking-wide font-serif">
+            <div className="flex flex-col text-center">{body}</div>
           </div>
         )}
+        {link && <div className="text-center pt-2">{link}</div>}
       </div>
     </section>
   )

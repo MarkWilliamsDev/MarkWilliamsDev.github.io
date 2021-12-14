@@ -5,6 +5,9 @@ import List from '../components/List'
 import Layout from '../layouts'
 
 const technologicalExprience = [
+  'JavaScript',
+  'TypeScript',
+  'Python',
   'React',
   'Next.js',
   'Gatsby',
