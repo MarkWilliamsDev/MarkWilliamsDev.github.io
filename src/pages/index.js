@@ -44,7 +44,7 @@ const Home = () => {
                   <List list={technologicalExprience} isHorizontal={true} />
                 </div>
               </div>
-              <div className="md:mx-56 mt-4 mb-3 space-y-4 text-left">
+              <div className="md:mx-32 lg:mx-52 mt-4 mb-3 space-y-4 text-left">
                 <p>
                   A "self taught" web developer based in Malvern, UK, I enjoy learning and using new
                   technologies. I'm currently looking for my first professional opportunity to put
