@@ -3,6 +3,7 @@ import * as React from 'react'
 import Section from '../components/Section'
 import List from '../components/List'
 import Layout from '../layouts'
+import ExternalLink from '../components/Nav/ExternalLink'
 
 const technologicalExprience = [
   'JavaScript',
@@ -52,28 +53,34 @@ const Home = () => {
                 </p>
                 <p>
                   Starting at the beginning of the pandemic, I learnt Python from{' '}
-                  <a href="https://www.codecademy.com/">Codecademy</a>'s computer science course. I
-                  then decided to get into web development and after spending time on Codecademy
-                  learning Javascript, I focused on learning React.
+                  <ExternalLink href={'https://www.codecademy.com/'} content={'Codecademy'} />
+                  's computer science course. I then decided to get into web development and after
+                  spending time on Codecademy learning Javascript, I focused on learning React.
                 </p>
                 <p>
                   After completing Stephen Grider's{' '}
-                  <a href="https://www.udemy.com/course/node-with-react-fullstack-web-development/">
-                    Node with React: Fullstack Web Development
-                  </a>
+                  <ExternalLink
+                    href="https://www.udemy.com/course/node-with-react-fullstack-web-development/"
+                    content={'Node with React: Fullstack Web Development'}
+                  />
                   , I began working on my first personal project which has been recently launched.
                 </p>
                 <p>
                   I recently completed{' '}
-                  <a href="https://www.udemy.com/course/understanding-typescript/">
-                    Understanding TypeScript - 2022 Edition
-                  </a>{' '}
+                  <ExternalLink
+                    href="https://www.udemy.com/course/understanding-typescript/"
+                    content={'Understanding TypeScript - 2022 Edition'}
+                  />{' '}
                   by Maximilian Schwarzmüller
                 </p>
                 <p>
                   In my spare time I enjoy listening to music and playing bass, which I play in a
-                  band for a traditional folk dance group. I've also recently started to learn the
-                  trumpet.
+                  band for a traditional folk dance group. I also sometimes produce{' '}
+                  <ExternalLink
+                    href="https://soundcloud.com/mwilliams3010"
+                    content={'some electronic music'}
+                  />
+                  . I've also recently started to learn the trumpet.
                 </p>
               </div>
             </>
