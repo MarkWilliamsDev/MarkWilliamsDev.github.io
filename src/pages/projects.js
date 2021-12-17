@@ -47,7 +47,7 @@ function Projects() {
           }
           body={
             <>
-              <p>
+              <p className="text-left sm:text-center">
                 Originally created using the MERN stack, this app was migrated to Next.js a few
                 months before to going into production.
               </p>
@@ -79,7 +79,7 @@ function Projects() {
           title={'Express with Typescript'}
           subTitle={'A simple REST API server using Express and Typescript '}
           body={
-            <p>
+            <p className="text-left sm:text-center">
               Based on an exercise in a Maximilian Schwarzmüller Typescript course with
               independently added improvements
             </p>
